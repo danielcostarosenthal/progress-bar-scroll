@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(0, 0%, 80%);
+	color: hsl(0, 0%, 25%);
+	font-size: 20px;
+	font-family: Bahnschrift, sans-serif;
+	font-weight: 100;
+	margin: 0;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1 {
+	color: hsl(210, 100%, 25%);
+	font-size: 1.75rem;
+	text-align: center;
+	width: 20ch;
+	margin: 3rem auto;
+}
+
+img {
+	border-radius: 0.25rem;
+	display: block;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	object-fit: cover;
+	filter: brightness(125%);
+	margin-bottom: 3rem;
+}
+
+p {
+	line-height: 1.5;
+	margin: 1.5rem auto;
+}
+
+p::first-letter {
+	color: hsl(210, 100%, 25%);
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+img,
+p {
+	width: 100%;
+	max-width: 600px;
+}
+
+footer {
+	background-color: hsl(210, 100%, 25%);
+	color: white;
+	height: 5rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+span:first-child,
+span:nth-child(2) {
+	margin-right: 0.25rem;
+}
+
+span:first-child {
+	margin-top: 0.3rem;
+}
+
+/*? We'll fill up the height of the progress-bar with JavaScript */
+.progress-bar {
+	background-color: hsl(210, 100%, 25%);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0.5rem;
+	height: 0;
+}
+
+/*? Make the fonts a little bigger on bigger screens */
+@media (min-width: 600px) {
+	h1 {
+		font-size: 2.25rem;
+	}
+
+	p {
+		text-align: justify;
+	}
+}
